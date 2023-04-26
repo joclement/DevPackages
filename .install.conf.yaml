@@ -1,6 +1,6 @@
 - shell:
     - sudo apt-get update
-    - sudo apt-get install zeal
-    - sudo apt-get install ncal
+    - sudo apt-get install -y zeal
+    - sudo apt-get install -y ncal
     - sudo snap install --classic code
     - python3 -m pip install pipx
