@@ -5,3 +5,4 @@
     - sudo apt-get install -y swaks
     - sudo snap install --classic code
     - python3 -m pip install pipx
+    - ./install-google-chrome.sh
