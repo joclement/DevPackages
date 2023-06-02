@@ -1,6 +1,8 @@
 - shell:
     - sudo apt-get update
     - sudo apt-get install -y clang
+                              clang-format
+                              clang-tidy
                               clangd
                               binutils
                               ncal
