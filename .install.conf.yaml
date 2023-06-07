@@ -6,6 +6,7 @@
                               clang-format
                               clang-tidy
                               clangd
+                              git-crypt
                               git-extras
                               ncal
                               swaks
