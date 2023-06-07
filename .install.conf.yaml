@@ -7,6 +7,7 @@
                               clang-tidy
                               clangd
                               cmake
+                              fzf
                               git-crypt
                               git-extras
                               ncal
