@@ -5,6 +5,7 @@
                               clang-format
                               clang-tidy
                               clangd
+                              git-extras
                               ncal
                               swaks
                               tig
