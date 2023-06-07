@@ -12,6 +12,7 @@
                               ncal
                               swaks
                               tig
+                              yamllint
                               zeal
     - sudo snap install --classic code
     - python3 -m pip install pipx
