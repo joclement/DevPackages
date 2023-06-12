@@ -11,6 +11,7 @@
                               git-crypt
                               git-extras
                               ncal
+                              net-tools
                               swaks
                               tig
                               yamllint
