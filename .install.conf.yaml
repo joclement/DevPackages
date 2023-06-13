@@ -22,6 +22,7 @@
     - sudo update-alternatives --install /usr/bin/clang-tidy clang-tidy /usr/bin/clang-tidy-15 100
     - sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-15 100
     - sudo snap install --classic code
+    - sudo snap install --classic nvim
     - python3 -m pip install pipx
     - ./install-google-chrome.sh
     - ./install-jfrog-cli.sh
