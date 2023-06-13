@@ -2,10 +2,10 @@
     - sudo apt-get update
     - sudo apt-get install -y binutils
                               ccache
-                              clang
-                              clang-format
-                              clang-tidy
-                              clangd
+                              clang-15
+                              clang-format-15
+                              clang-tidy-15
+                              clangd-15
                               cmake
                               fzf
                               git-crypt
