@@ -8,6 +8,7 @@
                               clang-tidy-15
                               clangd-15
                               cmake
+                              datamash
                               fzf
                               git-crypt
                               git-extras
