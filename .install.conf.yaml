@@ -12,6 +12,7 @@
                               fzf
                               git-crypt
                               git-extras
+                              git-lfs
                               ncal
                               net-tools
                               python-is-python3
