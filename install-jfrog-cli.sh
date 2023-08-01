@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
 
 wget https://releases.jfrog.io/artifactory/jfrog-gpg-public/jfrog_public_gpg.key \
     -O /tmp/jfrog-cli-v2-jf.pub
