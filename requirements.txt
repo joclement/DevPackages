@@ -1,0 +1,4 @@
+commitizen==3.6.0
+conan==2.0.9
+pynvim==0.4.3
+pipx==1.2.0
