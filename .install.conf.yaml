@@ -34,10 +34,11 @@
     - sudo snap install --classic code
     - sudo snap install --classic nvim
     - sudo snap install --classic valgrind
-    - python3 -m pip install pynvim
-    - python3 -m pip install pipx
-    - pipx install conan
-    - pipx install commitizen
+    - pip install --constraint=requirements.txt pynvim
+    - pip install --constraint=requirements.txt pipx
+    - pipx install --pip-args=--constraint=requirements.txt conan
+    - pipx install --pip-args=--constraint=requirements.txt commitizen
+    - pipx install --pip-args=--constraint=requirements.txt poetry
     - ./install-github-cli.sh
     - ./install-google-chrome.sh
     - ./install-jfrog-cli.sh
