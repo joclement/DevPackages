@@ -34,8 +34,8 @@
     - sudo snap install --classic code
     - sudo snap install --classic nvim
     - sudo snap install --classic valgrind
-    - python3 -m pip install pynvim
-    - python3 -m pip install pipx
+    - pip install pynvim
+    - pip install pipx
     - pipx install conan
     - pipx install commitizen
     - ./install-github-cli.sh
