@@ -3,3 +3,5 @@ conan==2.0.9
 pynvim==0.4.3
 pipx==1.2.0
 poetry==1.6.1
+nox==2023.4.22
+tox==4.10.0
