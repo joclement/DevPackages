@@ -1,0 +1,43 @@
+---
+default_install_hook_types: [pre-commit, pre-push, commit-msg]
+
+repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: f71fa2c1f9cf5cb705f73dffe4b21f7c61470ba9  # frozen: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+      - id: check-shebang-scripts-are-executable
+      - id: check-executables-have-shebangs
+      - id: detect-private-key
+      - id: requirements-txt-fixer
+  - repo: https://github.com/codespell-project/codespell
+    rev: 355e50e14fd03fe83e4ed9aa0489824b150b3b58  # frozen: v2.2.5
+    hooks:
+      - id: codespell
+        exclude: |
+          (?x)(
+            ^vim/autoload/plug\.vim$
+          )
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: 375289a39f5708101b1f916eb729e8d6da96993f  # frozen: v0.9.0.5
+    hooks:
+      - id: shellcheck
+        args: ["--norc"]
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: d0fdf8c8eed0ad3af28031a4156622d30c87f967  # frozen: 3.7.0
+    hooks:
+      - id: commitizen
+      - id: commitizen-branch
+        stages: [push]
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: 762c66ea96843b54b936fc680162ea67f85ec2d7  # frozen: v1.5.4
+    hooks:
+      - id: forbid-tabs
+
+ci:
+  autoupdate_schedule: quarterly
