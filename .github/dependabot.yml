@@ -13,3 +13,5 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    commit-message:
+      prefix: "feat(pip)"
