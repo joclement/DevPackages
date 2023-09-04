@@ -38,6 +38,7 @@
     - pip install --constraint=requirements.txt pipx
     - pipx install --pip-args=--constraint=requirements.txt conan
     - pipx install --pip-args=--constraint=requirements.txt commitizen
+    - pipx install --pip-args=--constraint=requirements.txt cookiecutter
     - pipx install --pip-args=--constraint=requirements.txt pdm
     - pipx install --pip-args=--constraint=requirements.txt poetry
     - pipx install --pip-args=--constraint=requirements.txt nox
