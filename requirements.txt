@@ -1,4 +1,4 @@
-commitizen==3.7.0
+commitizen==3.10.0
 conan==2.0.13
 cookiecutter==2.3.0
 nox==2023.4.22
