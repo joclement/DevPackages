@@ -45,12 +45,12 @@
     - sudo snap install --classic valgrind
     - pip install --constraint=requirements.txt pynvim
     - pip install --constraint=requirements.txt pipx
-    - pipx install --pip-args=--constraint=requirements.txt conan
     - pipx install --pip-args=--constraint=requirements.txt commitizen
+    - pipx install --pip-args=--constraint=requirements.txt conan
     - pipx install --pip-args=--constraint=requirements.txt cookiecutter
+    - pipx install --pip-args=--constraint=requirements.txt nox
     - pipx install --pip-args=--constraint=requirements.txt pdm
     - pipx install --pip-args=--constraint=requirements.txt poetry
-    - pipx install --pip-args=--constraint=requirements.txt nox
     - pipx install --pip-args=--constraint=requirements.txt tox
     - ./install-github-cli.sh
     - ./install-google-chrome.sh
