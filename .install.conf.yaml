@@ -16,6 +16,7 @@
                               ncal
                               net-tools
                               python-is-python3
+                              python3-pip
                               swaks
                               tig
                               tmux
