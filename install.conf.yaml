@@ -61,4 +61,3 @@
     - ./install-google-chrome.sh
     - ./install-jfrog-cli.sh
     - ./install-openvpn3.sh
-    - sudo gem install gollum
