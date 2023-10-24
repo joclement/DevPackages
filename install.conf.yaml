@@ -48,8 +48,7 @@
     - sudo snap install --classic code
     - sudo snap install --classic nvim
     - sudo snap install --classic valgrind
-    - pip install --constraint=pip_requirements.txt pynvim
-    - pip install --constraint=pip_requirements.txt pipx
+    - pip install -r ./pip_requirements.txt
     - pipx install --pip-args=--constraint=pipx_requirements.txt commitizen
     - pipx install --pip-args=--constraint=pipx_requirements.txt conan
     - pipx install --pip-args=--constraint=pipx_requirements.txt cookiecutter
