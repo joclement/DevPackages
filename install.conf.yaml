@@ -20,6 +20,7 @@
                               ncal
                               net-tools
                               oathtool
+                              pandoc
                               python-is-python3
                               python3-doc
                               python3-pip
