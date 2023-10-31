@@ -57,6 +57,7 @@
     - pipx install --pip-args=--constraint=pipx_requirements.txt pdm
     - pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
     - pipx install --pip-args=--constraint=pipx_requirements.txt poetry
+    - pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
     - pipx install --pip-args=--constraint=pipx_requirements.txt tox
     - ./install-github-cli.sh
     - ./install-google-chrome.sh
