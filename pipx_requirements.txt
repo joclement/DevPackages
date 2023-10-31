@@ -1,3 +1,4 @@
+black==23.10.1
 commitizen==3.10.0
 conan==2.0.13
 cookiecutter==2.4.0
