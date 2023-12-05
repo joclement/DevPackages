@@ -19,6 +19,7 @@
                               git-crypt
                               git-extras
                               git-lfs
+                              htop
                               ncal
                               net-tools
                               oathtool
