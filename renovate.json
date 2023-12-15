@@ -19,6 +19,14 @@
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "docker/compose"
+    },
+    {
+      "fileMatch": ["/install-vim-from-source.sh$"],
+      "matchStrings": [
+        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "vim/vim"
     }
   ],
   "packageRules": [

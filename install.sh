@@ -99,3 +99,4 @@ pre-commit init-templatedir ~/.git-template
 ./install-latest-git.sh
 ./install-openvpn3.sh
 ./install-hadolint.sh
+./install-vim-from-source.sh
