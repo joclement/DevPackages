@@ -68,9 +68,9 @@
     - pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
     - pipx install --pip-args=--constraint=pipx_requirements.txt tox
     - sudo cpan Perl::Critic
-    - ./install-latest-git.sh
+    - ./install-docker-compose.sh
     - ./install-github-cli.sh
     - ./install-google-chrome.sh
     - ./install-jfrog-cli.sh
+    - ./install-latest-git.sh
     - ./install-openvpn3.sh
-    - ./install-docker-compose.sh
