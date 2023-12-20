@@ -8,13 +8,13 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: f71fa2c1f9cf5cb705f73dffe4b21f7c61470ba9  # frozen: v4.4.0
     hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
       - id: check-added-large-files
-      - id: check-shebang-scripts-are-executable
       - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
       - id: detect-private-key
+      - id: end-of-file-fixer
       - id: requirements-txt-fixer
+      - id: trailing-whitespace
   - repo: https://github.com/codespell-project/codespell
     rev: 355e50e14fd03fe83e4ed9aa0489824b150b3b58  # frozen: v2.2.5
     hooks:
