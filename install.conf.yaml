@@ -62,7 +62,7 @@
     - pipx install --pip-args=--constraint=pipx_requirements.txt nox
     - pipx inject  --pip-args=--constraint=pipx_requirements.txt nox nox-poetry
     - pipx install --pip-args=--constraint=pipx_requirements.txt pdm
-    - pipx install --pip-args=--constraint=pipx_requirements.txt pipenv
+    - pipx install --pip-args=--constraint=pipx_requirements.txt pip-tools
     - pipx install --pip-args=--constraint=pipx_requirements.txt poetry
     - pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
     - pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
