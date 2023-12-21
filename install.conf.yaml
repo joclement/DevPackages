@@ -13,7 +13,6 @@
                               curl
                               datamash
                               docker
-                              docker-compose
                               fzf
                               fonts-hack
                               git-crypt
