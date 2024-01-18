@@ -83,6 +83,6 @@ sudo cpan Perl::Critic
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
 ./install-google-chrome.sh
-./install-jfrog-cli.sh
+./remove-jfrog-cli.sh
 ./install-latest-git.sh
 ./install-openvpn3.sh
