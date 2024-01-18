@@ -14,7 +14,7 @@ sudo apt-get install -y apt-file \
                         cmake \
                         curl \
                         datamash \
-                        docker \
+                        docker.io \
                         fzf \
                         fonts-hack \
                         git-crypt \
