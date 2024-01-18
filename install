@@ -1,15 +1,79 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
-
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
-
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+sudo apt-get update
+sudo apt-get install -y apt-file \
+                        apt-transport-https \
+                        binutils \
+                        ccache \
+                        clang-15 \
+                        clang-format-15 \
+                        clang-tidy-15 \
+                        clangd-15 \
+                        cmake \
+                        curl \
+                        datamash \
+                        docker \
+                        fzf \
+                        fonts-hack \
+                        git-crypt \
+                        git-extras \
+                        git-lfs \
+                        htop \
+                        jq \
+                        ncal \
+                        net-tools \
+                        oathtool \
+                        pandoc \
+                        perl \
+                        python-is-python3 \
+                        python3-doc \
+                        python3-pip \
+                        python3-venv \
+                        swaks \
+                        tig \
+                        tmux \
+                        traceroute \
+                        tree \
+                        universal-ctags \
+                        xclip \
+                        yamllint \
+                        zeal
+sudo apt-file update
+sudo update-alternatives --install /usr/bin/clang clang \
+                                   /usr/bin/clang-15 100
+sudo update-alternatives --install /usr/bin/clang++ clang++ \
+                                   /usr/bin/clang++-15 100
+sudo update-alternatives --install /usr/bin/clang-format clang-format \
+                                   /usr/bin/clang-format-15 100
+sudo update-alternatives --install /usr/bin/clang-tidy clang-tidy \
+                                   /usr/bin/clang-tidy-15 100
+sudo update-alternatives --install /usr/bin/clangd clangd \
+                                   /usr/bin/clangd-15 100
+sudo usermod -a -G docker $(whoami)
+sudo snap install --classic code
+sudo snap install --classic nvim
+sudo snap install --classic valgrind
+pip install -r ./pip_requirements.txt
+pipx install --pip-args=--constraint=pipx_requirements.txt black
+pipx install --pip-args=--constraint=pipx_requirements.txt commitizen
+pipx install --pip-args=--constraint=pipx_requirements.txt conan
+pipx install --pip-args=--constraint=pipx_requirements.txt cookiecutter
+pipx install --pip-args=--constraint=pipx_requirements.txt cruft
+pipx install --pip-args=--constraint=pipx_requirements.txt nox
+pipx inject  --pip-args=--constraint=pipx_requirements.txt nox nox-poetry
+pipx install --pip-args=--constraint=pipx_requirements.txt pdm
+pipx install --pip-args=--constraint=pipx_requirements.txt pip-tools
+pipx install --pip-args=--constraint=pipx_requirements.txt poetry
+pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
+pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
+pipx install --pip-args=--constraint=pipx_requirements.txt tox
+sudo cpan Perl::Critic
+./install-docker-compose.sh
+./install-github-cli.sh
+./install-gitlab-cli.sh
+./install-google-chrome.sh
+./install-jfrog-cli.sh
+./install-latest-git.sh
+./install-openvpn3.sh
