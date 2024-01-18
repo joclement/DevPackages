@@ -77,6 +77,8 @@ pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
 pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
 pipx install --pip-args=--constraint=pipx_requirements.txt tox
 
+pre-commit init-templatedir ~/.git-template
+
 sudo cpan Perl::Critic
 
 ./install-docker-compose.sh
