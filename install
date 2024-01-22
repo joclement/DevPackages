@@ -2,7 +2,10 @@
 
 set -euo pipefail
 
+sudo apt-get purge -y docker
+
 sudo apt-get update
+sudo apt-get remove containerd.io
 sudo apt-get install -y apt-file \
                         apt-transport-https \
                         binutils \
@@ -14,14 +17,15 @@ sudo apt-get install -y apt-file \
                         cmake \
                         curl \
                         datamash \
-                        docker \
-                        fzf \
+                        docker.io \
                         fonts-hack \
+                        fzf \
                         git-crypt \
                         git-extras \
                         git-lfs \
                         htop \
                         jq \
+                        libperl-critic-perl \
                         ncal \
                         net-tools \
                         oathtool \
@@ -40,7 +44,9 @@ sudo apt-get install -y apt-file \
                         xclip \
                         yamllint \
                         zeal
+
 sudo apt-file update
+
 sudo update-alternatives --install /usr/bin/clang clang \
                                    /usr/bin/clang-15 100
 sudo update-alternatives --install /usr/bin/clang++ clang++ \
@@ -51,10 +57,13 @@ sudo update-alternatives --install /usr/bin/clang-tidy clang-tidy \
                                    /usr/bin/clang-tidy-15 100
 sudo update-alternatives --install /usr/bin/clangd clangd \
                                    /usr/bin/clangd-15 100
+
 sudo usermod -a -G docker "$(whoami)"
+
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
+
 pip install -r ./pip_requirements.txt
 pipx install --pip-args=--constraint=pipx_requirements.txt black
 pipx install --pip-args=--constraint=pipx_requirements.txt commitizen
@@ -69,11 +78,13 @@ pipx install --pip-args=--constraint=pipx_requirements.txt poetry
 pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
 pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
 pipx install --pip-args=--constraint=pipx_requirements.txt tox
-sudo cpan Perl::Critic
+
+pre-commit init-templatedir ~/.git-template
+
 ./install-docker-compose.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
 ./install-google-chrome.sh
-./install-jfrog-cli.sh
+./remove-jfrog-cli.sh
 ./install-latest-git.sh
 ./install-openvpn3.sh
