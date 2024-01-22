@@ -17,8 +17,8 @@ sudo apt-get install -y apt-file \
                         curl \
                         datamash \
                         docker.io \
-                        fzf \
                         fonts-hack \
+                        fzf \
                         git-crypt \
                         git-extras \
                         git-lfs \
