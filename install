@@ -51,7 +51,7 @@ sudo update-alternatives --install /usr/bin/clang-tidy clang-tidy \
                                    /usr/bin/clang-tidy-15 100
 sudo update-alternatives --install /usr/bin/clangd clangd \
                                    /usr/bin/clangd-15 100
-sudo usermod -a -G docker $(whoami)
+sudo usermod -a -G docker "$(whoami)"
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
