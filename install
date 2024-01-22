@@ -24,6 +24,7 @@ sudo apt-get install -y apt-file \
                         git-lfs \
                         htop \
                         jq \
+                        libperl-critic-perl \
                         ncal \
                         net-tools \
                         oathtool \
@@ -78,8 +79,6 @@ pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
 pipx install --pip-args=--constraint=pipx_requirements.txt tox
 
 pre-commit init-templatedir ~/.git-template
-
-sudo cpan Perl::Critic
 
 ./install-docker-compose.sh
 ./install-github-cli.sh
