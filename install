@@ -5,7 +5,7 @@ set -euo pipefail
 sudo apt-get purge -y docker
 
 sudo apt-get update
-sudo apt-get remove containerd.io
+sudo apt-get remove -y containerd.io
 sudo apt-get install -y apt-file \
                         apt-transport-https \
                         binutils \
