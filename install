@@ -42,6 +42,7 @@ sudo apt-get install -y apt-file \
                         tree \
                         universal-ctags \
                         xclip \
+                        xmlstarlet \
                         yamllint \
                         zeal
 
