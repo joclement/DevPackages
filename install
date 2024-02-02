@@ -89,3 +89,4 @@ pre-commit init-templatedir ~/.git-template
 ./remove-jfrog-cli.sh
 ./install-latest-git.sh
 ./install-openvpn3.sh
+./install-hadolint.sh
