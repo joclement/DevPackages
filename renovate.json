@@ -1,0 +1,36 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "forkProcessing": "enabled",
+  "baseBranches": ["dev"],
+  "rebaseWhen": "behind-base-branch",
+  "dependencyDashboard": false,
+  "labels": ["dependencies"],
+  "commitMessagePrefix": "",
+  "commitMessageTopic": "{{depName}}",
+  "regexManagers": [
+    {
+      "fileMatch": ["/install-hadolint.sh$"],
+      "matchStrings": [
+        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "hadolint/hadolint"
+    },
+    {
+      "fileMatch": ["/install-docker-compose.sh$"],
+      "matchStrings": [
+        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "docker/compose"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["github-releases"],
+      "matchDepNames": ["docker/compose"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": false
+    }
+  ]
+}
