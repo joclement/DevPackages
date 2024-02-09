@@ -17,4 +17,4 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - run: ./install
+      - run: ./install.sh
