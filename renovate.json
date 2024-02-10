@@ -44,7 +44,9 @@
         "github-releases"
       ],
       "matchDepNames": [
-        "docker/compose"
+        "docker/compose",
+        "hadolint/hadolint",
+        "vim/vim"
       ],
       "matchUpdateTypes": [
         "minor",
