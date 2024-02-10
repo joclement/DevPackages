@@ -3,9 +3,12 @@
   "extends": [
     "github>renovatebot/.github"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["/install-hadolint.sh$"],
+      "customType": "regex",
+      "fileMatch": [
+        "/install-hadolint.sh$"
+      ],
       "matchStrings": [
         "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
@@ -13,7 +16,10 @@
       "depNameTemplate": "hadolint/hadolint"
     },
     {
-      "fileMatch": ["/install-docker-compose.sh$"],
+      "customType": "regex",
+      "fileMatch": [
+        "/install-docker-compose.sh$"
+      ],
       "matchStrings": [
         "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
@@ -21,7 +27,10 @@
       "depNameTemplate": "docker/compose"
     },
     {
-      "fileMatch": ["/install-vim-from-source.sh$"],
+      "customType": "regex",
+      "fileMatch": [
+        "/install-vim-from-source.sh$"
+      ],
       "matchStrings": [
         "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
@@ -31,9 +40,16 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["github-releases"],
-      "matchDepNames": ["docker/compose"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchDatasources": [
+        "github-releases"
+      ],
+      "matchDepNames": [
+        "docker/compose"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": false
     }
   ]
