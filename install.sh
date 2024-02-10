@@ -3,13 +3,14 @@
 set -euo pipefail
 
 sudo apt-get purge -y docker
+sudo apt-get remove -y containerd.io || true
 
 sudo apt-get update
-sudo apt-get remove -y containerd.io || true
 sudo apt-get install -y \
     apt-file \
     apt-transport-https \
     binutils \
+    build-essential \
     ccache \
     clang-15 \
     clang-format-15 \
@@ -21,6 +22,7 @@ sudo apt-get install -y \
     docker.io \
     fonts-hack \
     fzf \
+    git \
     git-crypt \
     git-extras \
     git-lfs \
@@ -97,3 +99,4 @@ pre-commit init-templatedir ~/.git-template
 ./install-latest-git.sh
 ./install-openvpn3.sh
 ./install-hadolint.sh
+./install-vim-from-source.sh
