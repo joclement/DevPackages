@@ -10,6 +10,7 @@ sudo apt-get install -y \
     apt-file \
     apt-transport-https \
     binutils \
+    build-essential \
     ccache \
     clang-15 \
     clang-format-15 \
