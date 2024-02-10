@@ -1,12 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "forkProcessing": "enabled",
-  "baseBranches": ["dev"],
-  "rebaseWhen": "behind-base-branch",
-  "dependencyDashboard": false,
-  "labels": ["dependencies"],
-  "commitMessagePrefix": "",
-  "commitMessageTopic": "{{depName}}",
+  "extends": [
+    "github>renovatebot/.github"
+  ],
   "regexManagers": [
     {
       "fileMatch": ["/install-hadolint.sh$"],
