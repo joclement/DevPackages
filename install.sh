@@ -21,6 +21,7 @@ sudo apt-get install -y \
     docker.io \
     fonts-hack \
     fzf \
+    git \
     git-crypt \
     git-extras \
     git-lfs \
