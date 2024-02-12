@@ -33,10 +33,9 @@ sudo apt install --yes \
 VERSION="v9.1.0095"
 
 if [ ! -d vim ]; then
-    git clone --branch "$VERSION" --depth 1 https://github.com/vim/vim.git
+    git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
 cd vim
-git fetch
 git checkout $VERSION
 
 VERSION_OF_EXISTING_VIM="1"
