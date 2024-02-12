@@ -73,3 +73,5 @@ if [ -z "${CI:-}" ]; then
 fi
 
 sudo make install
+
+cd ..
