@@ -4,4 +4,5 @@
 
 Simple repository containing a list of some of the tools I use for development.
 It is targeted for Ubuntu.
-[dotbot](https://github.com/anishathalye/dotbot) is used for the installation.
+Bash scripts are used for the installation.
+The top-level scripts that does the complete installation is `install.sh`.
