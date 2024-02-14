@@ -26,6 +26,7 @@ sudo apt-get install -y \
     git-crypt \
     git-extras \
     git-lfs \
+    golang-go \
     htop \
     jq \
     libperl-critic-perl \
