@@ -38,7 +38,7 @@ fi
 cd vim
 git checkout "$VERSION"
 
-if command -v vim; then
+if command -v vim > /dev/null; then
     VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
 fi
 
