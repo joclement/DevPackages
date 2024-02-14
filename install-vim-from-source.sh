@@ -46,7 +46,7 @@ MINOR_VERSION=$(echo $VERSION | cut -d'.' -f2)
 PATCH_VERSION=$(echo $VERSION | cut -d'.' -f3 | sed 's/^0*//')
 MINOR_AND_PATCH_VERSION="$MINOR_VERSION-$PATCH_VERSION"
 
-if [[ "$VERSION_EXISTING" == "$MINOR_AND_PATCH_VERSION" ]]; then
+if [[ $VERSION_EXISTING == "$MINOR_AND_PATCH_VERSION" ]]; then
     echo "$VERSION is already installed."
     exit 0
 fi
