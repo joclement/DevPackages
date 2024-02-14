@@ -10,7 +10,7 @@ if docker compose > /dev/null; then
     VERSION_EXISTING=$(docker compose version | grep -oE 'v[0-9|.]+')
 fi
 
-if [[ $VERSION_EXISTING == "$VERSION" ]]; then
+if [[ ${VERSION_EXISTING:-} == "$VERSION" ]]; then
     echo "$VERSION is already installed."
     exit 0
 fi
