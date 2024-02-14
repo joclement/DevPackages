@@ -46,6 +46,7 @@ fi
 if ((VERSION_OF_EXISTING_VIM > VERSION)); then
     exit 1
 elif ((VERSION_OF_EXISTING_VIM == VERSION)); then
+    echo "$VERSION is already installed."
     exit 0
 fi
 
