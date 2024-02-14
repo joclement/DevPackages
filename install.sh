@@ -26,6 +26,7 @@ sudo apt-get install -y \
     git-crypt \
     git-extras \
     git-lfs \
+    golang-go \
     htop \
     jq \
     libperl-critic-perl \
@@ -71,6 +72,7 @@ sudo update-alternatives --install \
 sudo usermod -a -G docker "$(whoami)"
 
 sudo snap install --classic code
+sudo snap install --classic go
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 

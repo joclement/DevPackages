@@ -36,16 +36,18 @@ if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
 cd vim
-git checkout $VERSION
+git checkout "$VERSION"
 
-VERSION_OF_EXISTING_VIM="1"
-if command -v vim; then
-    VERSION_OF_EXISTING_VIM=$(vim --version | grep -oP '(?<=^VIM - Vi IMproved )[0-9|.]+')
+if command -v vim > /dev/null; then
+    VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
 fi
 
-if ((VERSION_OF_EXISTING_VIM > VERSION)); then
-    exit 1
-elif ((VERSION_OF_EXISTING_VIM == VERSION)); then
+MINOR_VERSION=$(echo $VERSION | cut -d'.' -f2)
+PATCH_VERSION=$(echo $VERSION | cut -d'.' -f3 | sed 's/^0*//')
+MINOR_AND_PATCH_VERSION="$MINOR_VERSION-$PATCH_VERSION"
+
+if [[ ${VERSION_EXISTING:-} == "$MINOR_AND_PATCH_VERSION" ]]; then
+    echo "$VERSION is already installed."
     exit 0
 fi
 
