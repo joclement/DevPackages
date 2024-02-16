@@ -70,6 +70,13 @@ sudo update-alternatives --install \
     /usr/bin/clangd clangd \
     /usr/bin/clangd-15 100
 
+sudo update-alternatives --install \
+    /usr/local/bin/go go \
+    /usr/lib/go-1.21/bin/go 100
+sudo update-alternatives --install \
+    /usr/local/bin/gofmt go \
+    /usr/lib/go-1.21/bin/gofmt 100
+
 sudo usermod -a -G docker "$(whoami)"
 
 sudo snap install --classic code
