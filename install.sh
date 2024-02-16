@@ -4,6 +4,7 @@ set -euo pipefail
 
 sudo apt-get purge -y docker
 sudo apt-get remove -y containerd.io || true
+sudo snap remove go
 
 sudo apt-get update
 sudo apt-get install -y \
