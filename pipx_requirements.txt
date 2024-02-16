@@ -1,6 +1,6 @@
 black==24.2.0
 commitizen==3.14.1
-conan==2.0.17
+conan==2.1.0
 cookiecutter==2.5.0
 cruft==2.15.0
 nox==2023.4.22
