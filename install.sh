@@ -4,6 +4,7 @@ set -euo pipefail
 
 sudo apt-get purge -y docker
 sudo apt-get remove -y containerd.io || true
+sudo snap remove go
 
 sudo apt-get update
 sudo apt-get install -y \
@@ -68,6 +69,13 @@ sudo update-alternatives --install \
 sudo update-alternatives --install \
     /usr/bin/clangd clangd \
     /usr/bin/clangd-15 100
+
+sudo update-alternatives --install \
+    /usr/local/bin/go go \
+    /usr/lib/go-1.21/bin/go 100
+sudo update-alternatives --install \
+    /usr/local/bin/gofmt go \
+    /usr/lib/go-1.21/bin/gofmt 100
 
 sudo usermod -a -G docker "$(whoami)"
 
