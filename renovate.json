@@ -7,7 +7,7 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "/install-hadolint.sh$"
+        "^install-hadolint.sh$"
       ],
       "matchStrings": [
         "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s*"
@@ -18,7 +18,7 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "/install-docker-compose.sh$"
+        "^install-docker-compose.sh$"
       ],
       "matchStrings": [
         "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s*"
@@ -29,7 +29,7 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "/install-vim-from-source.sh$"
+        "^install-vim-from-source.sh$"
       ],
       "matchStrings": [
         "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s*"
