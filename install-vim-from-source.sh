@@ -2,6 +2,21 @@
 
 set -euo pipefail
 
+VERSION="9.1.0095"
+
+if command -v vim > /dev/null; then
+    VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
+fi
+
+MINOR_VERSION=$(echo $VERSION | cut -d'.' -f2)
+PATCH_VERSION=$(echo $VERSION | cut -d'.' -f3 | sed 's/^0*//')
+MINOR_AND_PATCH_VERSION="$MINOR_VERSION-$PATCH_VERSION"
+
+if [[ ${VERSION_EXISTING:-} == "$MINOR_AND_PATCH_VERSION" ]]; then
+    echo "$VERSION is already installed."
+    exit 0
+fi
+
 sudo apt-get purge --yes \
     gvim \
     vim \
@@ -30,26 +45,11 @@ sudo apt install --yes \
     python3-dev \
     ruby-dev
 
-VERSION="9.1.0095"
-
 if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
 cd vim
 git checkout "v$VERSION"
-
-if command -v vim > /dev/null; then
-    VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
-fi
-
-MINOR_VERSION=$(echo $VERSION | cut -d'.' -f2)
-PATCH_VERSION=$(echo $VERSION | cut -d'.' -f3 | sed 's/^0*//')
-MINOR_AND_PATCH_VERSION="$MINOR_VERSION-$PATCH_VERSION"
-
-if [[ ${VERSION_EXISTING:-} == "$MINOR_AND_PATCH_VERSION" ]]; then
-    echo "$VERSION is already installed."
-    exit 0
-fi
 
 ./configure \
     --enable-cscope \
