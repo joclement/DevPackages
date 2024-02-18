@@ -10,7 +10,7 @@
         "/install-hadolint.sh$"
       ],
       "matchStrings": [
-        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s*"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "hadolint/hadolint"
@@ -21,7 +21,7 @@
         "/install-docker-compose.sh$"
       ],
       "matchStrings": [
-        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s*"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "docker/compose"
@@ -32,7 +32,7 @@
         "/install-vim-from-source.sh$"
       ],
       "matchStrings": [
-        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
+        "VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s*"
       ],
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "vim/vim"

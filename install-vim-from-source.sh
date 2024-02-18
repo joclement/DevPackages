@@ -30,13 +30,13 @@ sudo apt install --yes \
     python3-dev \
     ruby-dev
 
-VERSION="v9.1.0095"
+VERSION="9.1.0095"
 
 if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
 cd vim
-git checkout "$VERSION"
+git checkout "v$VERSION"
 
 if command -v vim > /dev/null; then
     VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
