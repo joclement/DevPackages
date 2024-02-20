@@ -35,11 +35,13 @@ sudo apt-get install -y \
     net-tools \
     oathtool \
     pandoc \
+    parallel \
     perl \
     python-is-python3 \
     python3-doc \
     python3-pip \
     python3-venv \
+    silversearcher-ag \
     shfmt \
     swaks \
     tig \
@@ -50,7 +52,8 @@ sudo apt-get install -y \
     xclip \
     xmlstarlet \
     yamllint \
-    zeal
+    zeal \
+    zsh \
 
 sudo apt-file update
 
