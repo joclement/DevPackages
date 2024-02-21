@@ -53,7 +53,7 @@ sudo apt-get install -y \
     xmlstarlet \
     yamllint \
     zeal \
-    zsh \
+    zsh
 
 sudo apt-file update
 
