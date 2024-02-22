@@ -86,23 +86,7 @@ sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
-pip install -r ./pip_requirements.txt
-pipx install --pip-args=--constraint=pipx_requirements.txt black
-pipx install --pip-args=--constraint=pipx_requirements.txt commitizen
-pipx install --pip-args=--constraint=pipx_requirements.txt conan
-pipx install --pip-args=--constraint=pipx_requirements.txt cookiecutter
-pipx install --pip-args=--constraint=pipx_requirements.txt cruft
-pipx install --pip-args=--constraint=pipx_requirements.txt nox
-pipx inject --pip-args=--constraint=pipx_requirements.txt nox nox-poetry
-pipx install --pip-args=--constraint=pipx_requirements.txt pdm
-pipx install --pip-args=--constraint=pipx_requirements.txt pip-tools
-pipx install --pip-args=--constraint=pipx_requirements.txt poetry
-pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
-pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
-pipx install --pip-args=--constraint=pipx_requirements.txt tox
-
-pre-commit init-templatedir ~/.git-template
-
+./install-python-packages.sh
 ./install-docker-compose.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
@@ -112,3 +96,5 @@ pre-commit init-templatedir ~/.git-template
 ./install-openvpn3.sh
 ./install-hadolint.sh
 ./install-vim-from-source.sh
+
+pre-commit init-templatedir ~/.git-template
