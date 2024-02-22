@@ -87,19 +87,9 @@ sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
 pip install -r ./pip_requirements.txt
-pipx install --pip-args=--constraint=pipx_requirements.txt black
-pipx install --pip-args=--constraint=pipx_requirements.txt commitizen
-pipx install --pip-args=--constraint=pipx_requirements.txt conan
-pipx install --pip-args=--constraint=pipx_requirements.txt cookiecutter
-pipx install --pip-args=--constraint=pipx_requirements.txt cruft
-pipx install --pip-args=--constraint=pipx_requirements.txt nox
-pipx inject --pip-args=--constraint=pipx_requirements.txt nox nox-poetry
-pipx install --pip-args=--constraint=pipx_requirements.txt pdm
-pipx install --pip-args=--constraint=pipx_requirements.txt pip-tools
-pipx install --pip-args=--constraint=pipx_requirements.txt poetry
-pipx install --pip-args=--constraint=pipx_requirements.txt pre-commit
-pipx install --pip-args=--constraint=pipx_requirements.txt shellcheck-py
-pipx install --pip-args=--constraint=pipx_requirements.txt tox
+
+xargs -L1 pipx install < pipx_requirements.txt
+pipx inject --pip-args=--constraint=inject_requirements.txt nox nox-poetry
 
 pre-commit init-templatedir ~/.git-template
 
