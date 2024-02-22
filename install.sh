@@ -86,13 +86,7 @@ sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
-pip install -r ./pip_requirements.txt
-
-xargs -L1 pipx install < pipx_requirements.txt
-pipx inject --pip-args=--constraint=inject_requirements.txt nox nox-poetry
-
-pre-commit init-templatedir ~/.git-template
-
+./install-python-packages.sh
 ./install-docker-compose.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
@@ -102,3 +96,5 @@ pre-commit init-templatedir ~/.git-template
 ./install-openvpn3.sh
 ./install-hadolint.sh
 ./install-vim-from-source.sh
+
+pre-commit init-templatedir ~/.git-template
