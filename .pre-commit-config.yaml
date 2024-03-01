@@ -46,6 +46,12 @@ repos:
     rev: v3.7.0-4
     hooks:
       - id: shfmt
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.28.0
+    hooks:
+      - id: check-github-workflows
+      - id: check-renovate
+
 
 ci:
   autoupdate_schedule: quarterly
