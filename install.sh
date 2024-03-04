@@ -86,15 +86,15 @@ sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
-./install-python-packages.sh
 ./install-docker-compose.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
 ./install-google-chrome.sh
-./remove-jfrog-cli.sh
+./install-hadolint.sh
 ./install-latest-git.sh
 ./install-openvpn3.sh
-./install-hadolint.sh
+./install-python-packages.sh
 ./install-vim-from-source.sh
+./remove-jfrog-cli.sh
 
 pre-commit init-templatedir ~/.git-template
