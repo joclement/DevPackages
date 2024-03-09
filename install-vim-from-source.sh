@@ -30,7 +30,7 @@ sudo apt-get purge --yes \
 
 sudo apt-get autoremove --yes
 
-sudo apt install --yes \
+sudo apt-get install --yes \
     libatk1.0-dev \
     libcairo2-dev \
     liblua5.4-dev \
