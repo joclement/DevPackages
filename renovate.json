@@ -29,6 +29,17 @@
     {
       "customType": "regex",
       "fileMatch": [
+        "^install-gitlab-cli.sh$"
+      ],
+      "matchStrings": [
+        "VERSION=\"(?<currentValue>.+?)\"\\n"
+      ],
+      "datasourceTemplate": "gitlab-releases",
+      "depNameTemplate": "gitlab-org/cli"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
         "^install-vim-from-source.sh$"
       ],
       "matchStrings": [
