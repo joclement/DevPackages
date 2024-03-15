@@ -5,7 +5,7 @@ conan==2.1.0
 cookiecutter==2.6.0
 cruft==2.15.0
 mypy==1.9.0
-nox==2023.4.22
+nox==2024.3.2
 pdm==2.12.4
 pip-tools==7.4.1
 poetry==1.8.2
