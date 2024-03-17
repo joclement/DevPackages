@@ -1,5 +1,5 @@
 autoimport==1.4.0
-black==24.2.0
+black==24.3.0
 commitizen==3.18.4
 conan==2.1.0
 cookiecutter==2.6.0
