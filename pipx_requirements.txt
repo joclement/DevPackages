@@ -10,6 +10,6 @@ pdm==2.12.4
 pip-tools==7.4.1
 poetry==1.8.2
 pre-commit==3.6.2
-ruff==0.3.3
+ruff==0.3.4
 shellcheck-py==0.10.0.1
 tox==4.14.1
