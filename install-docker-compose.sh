@@ -4,7 +4,7 @@ set -euo pipefail
 
 REPO_URL=https://github.com/docker/compose
 
-VERSION="2.25.0"
+VERSION="2.26.0"
 
 if docker compose > /dev/null; then
     VERSION_EXISTING=$(docker compose version | grep -oE '[0-9|.]+')
