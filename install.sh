@@ -28,6 +28,7 @@ sudo apt-get install -y \
     datamash \
     docker-compose-v2 \
     docker.io \
+    dos2unix \
     fonts-hack \
     fzf \
     git \
