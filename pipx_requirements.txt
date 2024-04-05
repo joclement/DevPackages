@@ -1,4 +1,5 @@
 autoimport==1.4.0
+python-gitlab=4.4.0
 black==24.3.0
 commitizen==3.21.3
 conan==2.2.2
