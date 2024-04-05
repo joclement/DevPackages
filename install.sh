@@ -46,6 +46,7 @@ sudo apt-get install -y \
     parallel \
     perl \
     python-is-python3 \
+    python3 \
     python3-doc \
     python3-pip \
     python3-venv \
