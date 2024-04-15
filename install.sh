@@ -2,14 +2,6 @@
 
 set -euo pipefail
 
-sudo apt-get purge -y docker
-sudo apt-get remove -y containerd.io || true
-
-DOCKER_CLI_PLUGINS=$HOME/.docker/cli-plugins
-rm -f "$DOCKER_CLI_PLUGINS/docker-compose"
-rmdir "$DOCKER_CLI_PLUGINS" || true
-unset DOCKER_CLI_PLUGINS
-
 sudo snap remove go
 
 sudo apt-get update
@@ -26,9 +18,6 @@ sudo apt-get install -y \
     cmake \
     curl \
     datamash \
-    docker-compose-v2 \
-    docker-buildx \
-    docker.io \
     dos2unix \
     fonts-hack \
     fzf \
@@ -90,12 +79,11 @@ sudo update-alternatives --install \
     /usr/local/bin/gofmt go \
     /usr/lib/go-1.21/bin/gofmt 100
 
-sudo usermod -a -G docker "$(whoami)"
-
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
+./install-docker.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
 ./install-google-chrome.sh
