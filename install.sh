@@ -27,6 +27,7 @@ sudo apt-get install -y \
     curl \
     datamash \
     docker-compose-v2 \
+    docker-buildx \
     docker.io \
     dos2unix \
     fonts-hack \
