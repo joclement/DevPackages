@@ -2,13 +2,13 @@
 
 set -euo pipefail
 
-sudo apt-get purge -y containerd.io || true
+sudo apt-get purge --yes containerd.io || true
 
-sudo apt-get install -y \
+sudo apt-get install --yes \
     docker-compose-v2 \
     docker-buildx \
     docker.io
 
-sudo usermod -a -G docker "$(whoami)"
+sudo usermod --append --groups docker "$(whoami)"
 
 docker buildx install

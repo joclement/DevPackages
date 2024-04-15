@@ -5,7 +5,7 @@ set -euo pipefail
 sudo snap remove go
 
 sudo apt-get update
-sudo apt-get install -y \
+sudo apt-get install --yes \
     apt-file \
     apt-transport-https \
     binutils \
