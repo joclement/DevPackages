@@ -11,3 +11,5 @@ sudo apt-get install -y \
     docker.io
 
 sudo usermod -a -G docker "$(whoami)"
+
+docker buildx install
