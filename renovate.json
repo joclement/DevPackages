@@ -41,7 +41,8 @@
   "packageRules": [
     {
       "matchDatasources": [
-        "github-releases"
+        "github-releases",
+        "github-tags"
       ],
       "matchDepNames": [
         "hadolint/hadolint",
