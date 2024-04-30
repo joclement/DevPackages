@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="9.1.0095"
+VERSION="9.1.0373"
 
 if command -v vim > /dev/null; then
     VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
