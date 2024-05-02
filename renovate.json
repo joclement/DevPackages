@@ -3,6 +3,9 @@
   "extends": [
     "github>renovatebot/.github"
   ],
+  "pip_requirements": {
+      "fileMatch": ["requirements.txt", "requirements_pipx.txt"]
+  },
   "customManagers": [
     {
       "customType": "regex",
