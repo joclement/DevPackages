@@ -34,6 +34,7 @@
       "matchStrings": [
         "VERSION=\"(?<currentValue>.+?)\"\\n"
       ],
+      "currentValueTemplate": "v9.1.0373",
       "datasourceTemplate": "git-tags",
       "depNameTemplate": "https://github.com/vim/vim.git"
     }
