@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-sudo snap remove go
-
 sudo apt-get update
 sudo apt-get install --yes \
     apt-file \
@@ -25,7 +23,6 @@ sudo apt-get install --yes \
     git-crypt \
     git-extras \
     git-lfs \
-    golang-1.21 \
     htop \
     jq \
     libperl-critic-perl \
@@ -72,13 +69,6 @@ sudo update-alternatives --install \
     /usr/bin/clangd clangd \
     /usr/bin/clangd-15 100
 
-sudo update-alternatives --install \
-    /usr/local/bin/go go \
-    /usr/lib/go-1.21/bin/go 100
-sudo update-alternatives --install \
-    /usr/local/bin/gofmt go \
-    /usr/lib/go-1.21/bin/gofmt 100
-
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
@@ -86,6 +76,7 @@ sudo snap install --classic valgrind
 ./install-docker.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
+./install-golang.sh
 ./install-google-chrome.sh
 ./install-hadolint.sh
 ./install-latest-git.sh
