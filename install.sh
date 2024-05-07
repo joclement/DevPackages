@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-sudo snap remove go
-
 sudo apt-get update
 sudo apt-get install --yes \
     apt-file \
