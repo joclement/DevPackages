@@ -49,8 +49,6 @@ sudo apt-get install --yes \
     zeal \
     zsh
 
-sudo apt-file update
-
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
@@ -67,5 +65,7 @@ sudo snap install --classic valgrind
 ./install-python-packages.sh
 ./install-vim-from-source.sh
 ./remove-jfrog-cli.sh
+
+sudo apt-file update
 
 pre-commit init-templatedir ~/.git-template
