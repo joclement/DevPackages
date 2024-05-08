@@ -7,7 +7,7 @@ cruft==2.15.0
 gita==0.16.6.6
 mypy==1.10.0
 nox==2024.4.15
-pdm==2.15.1
+pdm==2.15.2
 pip-tools==7.4.1
 poetry==1.8.2
 pre-commit==3.7.0
