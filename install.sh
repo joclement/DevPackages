@@ -16,6 +16,7 @@ sudo apt-get install --yes \
     cmake \
     curl \
     datamash \
+    devscripts \
     dos2unix \
     fonts-hack \
     fzf \
