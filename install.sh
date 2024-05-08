@@ -3,6 +3,7 @@
 set -euo pipefail
 
 sudo apt-get update
+
 sudo apt-get install --yes \
     apt-file \
     apt-transport-https \
