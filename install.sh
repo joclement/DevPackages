@@ -9,10 +9,6 @@ sudo apt-get install --yes \
     binutils \
     build-essential \
     ccache \
-    clang-15 \
-    clang-format-15 \
-    clang-tidy-15 \
-    clangd-15 \
     cmake \
     curl \
     datamash \
@@ -54,26 +50,11 @@ sudo apt-get install --yes \
 
 sudo apt-file update
 
-sudo update-alternatives --install \
-    /usr/bin/clang clang \
-    /usr/bin/clang-15 100
-sudo update-alternatives --install \
-    /usr/bin/clang++ clang++ \
-    /usr/bin/clang++-15 100
-sudo update-alternatives --install \
-    /usr/bin/clang-format clang-format \
-    /usr/bin/clang-format-15 100
-sudo update-alternatives --install \
-    /usr/bin/clang-tidy clang-tidy \
-    /usr/bin/clang-tidy-15 100
-sudo update-alternatives --install \
-    /usr/bin/clangd clangd \
-    /usr/bin/clangd-15 100
-
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
+./install-clang.sh
 ./install-docker.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
