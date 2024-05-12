@@ -29,6 +29,7 @@ sudo apt-get install --yes \
     pandoc \
     parallel \
     perl \
+    pdfarranger \
     python-is-python3 \
     python3 \
     python3-doc \
