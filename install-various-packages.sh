@@ -20,6 +20,7 @@ sudo apt-get install --yes \
     git-crypt \
     git-extras \
     git-lfs \
+    git-sizer \
     htop \
     jq \
     libperl-critic-perl \
