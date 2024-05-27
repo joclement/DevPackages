@@ -19,7 +19,7 @@ else
 fi
 
 echo "$openvpn_repo" > /tmp/openvpn3.list
-sudo mv /tmp/openvpn3.list /etc/apt/sources.list.d/openvpn3.list
+sudo mv /tmp/openvpn3.list /etc/apt/sources.list.d/.
 
 sudo apt-get update
 sudo apt-get install --yes openvpn3
