@@ -21,7 +21,6 @@ sudo apt-get purge --yes \
     gvim \
     vim \
     vim-common \
-    vim-gtk \
     vim-gtk3 \
     vim-gui-common \
     vim-nox \
