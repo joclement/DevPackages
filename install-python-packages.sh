@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-pip install --user -r ./requirements.txt
+pip install --user --requirement ./requirements.txt
 
 xargs -L1 pipx install --force < requirements_pipx.txt
 pipx inject --pip-args=--constraint=requirements_inject.txt nox nox-poetry
