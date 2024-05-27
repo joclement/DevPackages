@@ -13,6 +13,10 @@ if [[ $os_version == "22.04" ]]; then
     openvpn_repo="$openvpn_repo jammy main"
 elif [[ $os_version == "24.04" ]]; then
     openvpn_repo="$openvpn_repo noble main"
+    # TODO https://github.com/joclement/DevPackages/issues/153
+    echo "Installing openvpn3 on Ubuntu24.04 does not work yet," \
+        "see https://github.com/OpenVPN/openvpn3-linux/issues/253"
+    exit 0
 else
     echo "OS version $os_version is unsupported"
     exit 1
