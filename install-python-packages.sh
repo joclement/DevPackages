@@ -7,7 +7,7 @@ sudo apt-get install --yes \
     python3 \
     python3-doc \
     python3-pip \
-    python3-venv \
+    python3-venv
 
 # TODO avoid `PIP_BREAK_SYSTEM_PACKAGES=1`, see #157
 PIP_BREAK_SYSTEM_PACKAGES=1 pip install --user --requirement ./requirements.txt
