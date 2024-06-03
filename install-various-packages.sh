@@ -31,11 +31,6 @@ sudo apt-get install --yes \
     parallel \
     perl \
     pdfarranger \
-    python-is-python3 \
-    python3 \
-    python3-doc \
-    python3-pip \
-    python3-venv \
     silversearcher-ag \
     shfmt \
     swaks \
