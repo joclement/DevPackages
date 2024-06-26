@@ -5,7 +5,7 @@ conan==2.4.1
 cookiecutter==2.6.0
 cruft==2.15.0
 gita==0.16.7.2
-mypy==1.10.0
+mypy==1.10.1
 nox==2024.4.15
 pdm==2.15.4
 pip-tools==7.4.1
