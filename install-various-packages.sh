@@ -44,3 +44,7 @@ sudo apt-get install --yes \
     yamllint \
     zeal \
     zsh
+
+sudo snap install --classic code
+sudo snap install --classic nvim
+sudo snap install --classic valgrind

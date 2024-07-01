@@ -5,11 +5,6 @@ set -euo pipefail
 sudo apt-get update
 
 ./install-various-packages.sh
-
-sudo snap install --classic code
-sudo snap install --classic nvim
-sudo snap install --classic valgrind
-
 ./install-clang.sh
 ./install-docker.sh
 ./install-github-cli.sh
