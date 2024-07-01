@@ -21,6 +21,7 @@ sudo apt-get install --yes \
     git-extras \
     git-lfs \
     git-sizer \
+    graphicsmagick-imagemagick-compat \
     htop \
     jq \
     libperl-critic-perl \
@@ -29,10 +30,10 @@ sudo apt-get install --yes \
     oathtool \
     pandoc \
     parallel \
-    perl \
     pdfarranger \
-    silversearcher-ag \
+    perl \
     shfmt \
+    silversearcher-ag \
     swaks \
     tig \
     tmux \
