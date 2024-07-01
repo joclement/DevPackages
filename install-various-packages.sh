@@ -30,10 +30,10 @@ sudo apt-get install --yes \
     oathtool \
     pandoc \
     parallel \
-    perl \
     pdfarranger \
-    silversearcher-ag \
+    perl \
     shfmt \
+    silversearcher-ag \
     swaks \
     tig \
     tmux \
