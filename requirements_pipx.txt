@@ -4,6 +4,7 @@ commitizen==3.28.0
 conan==2.5.0
 cookiecutter==2.6.0
 cruft==2.15.0
+flake8==7.1.0
 gita==0.16.7.2
 mypy==1.11.0
 nox==2024.4.15
