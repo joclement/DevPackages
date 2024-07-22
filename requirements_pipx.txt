@@ -13,6 +13,6 @@ pip-tools==7.4.1
 poetry==1.8.3
 pre-commit==3.7.1
 python-gitlab==4.8.0
-ruff==0.5.3
+ruff==0.5.4
 shellcheck-py==0.10.0.1
 tox==4.16.0
