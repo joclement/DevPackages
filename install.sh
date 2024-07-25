@@ -9,7 +9,7 @@ sudo apt-get update
 ./install-docker.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
-./install-golang.sh
+./install-go-and-tools.sh
 ./install-google-chrome.sh
 ./install-hadolint.sh
 ./install-latest-git.sh
