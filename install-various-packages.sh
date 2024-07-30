@@ -9,6 +9,7 @@ sudo apt-get install --yes \
     build-essential \
     ccache \
     cmake \
+    cmake-qt-qui \
     curl \
     datamash \
     devscripts \
