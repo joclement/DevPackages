@@ -6,6 +6,7 @@ sudo apt-get update
 
 ./install-various-packages.sh
 ./install-clang.sh
+./install-cmake.sh
 ./install-docker.sh
 ./install-github-cli.sh
 ./install-gitlab-cli.sh
