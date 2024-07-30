@@ -8,8 +8,6 @@ sudo apt-get install --yes \
     binutils \
     build-essential \
     ccache \
-    cmake \
-    cmake-qt-qui \
     curl \
     datamash \
     devscripts \
