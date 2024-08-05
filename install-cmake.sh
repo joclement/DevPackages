@@ -14,4 +14,4 @@ echo "deb [signed-by=$kitware_gpg_key] https://apt.kitware.com/ubuntu/ jammy mai
     | sudo tee /etc/apt/sources.list.d/kitware.list > /dev/null
 
 sudo apt-get update
-sudo apt-get install cmake cmake-qt-gui kitware-archive-keyring
+sudo apt-get install --yes cmake cmake-qt-gui kitware-archive-keyring
