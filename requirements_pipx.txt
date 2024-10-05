@@ -16,4 +16,4 @@ pre-commit==3.8.0
 python-gitlab==4.12.2
 ruff==0.6.8
 shellcheck-py==0.10.0.1
-tox==4.20.0
+tox==4.21.2
