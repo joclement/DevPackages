@@ -8,7 +8,7 @@ cruft==2.15.0
 flake8==7.1.1
 gita==0.16.7.2
 mypy==1.11.2
-nox==2024.4.15
+nox==2024.10.9
 pdm==2.19.1
 pip-tools==7.4.1
 poetry==1.8.3
