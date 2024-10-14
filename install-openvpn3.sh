@@ -6,7 +6,7 @@ curl --fail --silent --show-error --location \
     https://packages.openvpn.net/packages-repo.gpg \
     | sudo tee /etc/apt/keyrings/openvpn.asc
 
-os_version=$(lsb_release -sr)
+os_version=$(lsb_release --short --release)
 openvpn_repo="deb [arch=amd64, signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian"
 if [[ $os_version == "22.04" ]]; then
     openvpn_repo="$openvpn_repo jammy main"
