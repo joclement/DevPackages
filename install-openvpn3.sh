@@ -6,16 +6,9 @@ curl --fail --silent --show-error --location \
     https://packages.openvpn.net/packages-repo.gpg \
     | sudo tee /etc/apt/keyrings/openvpn.asc
 
-os_version=$(lsb_release --short --release)
 openvpn_repo="deb [arch=amd64, signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian"
-if [[ $os_version == "22.04" ]]; then
-    openvpn_repo="$openvpn_repo jammy main"
-elif [[ $os_version == "24.04" ]]; then
-    openvpn_repo="$openvpn_repo noble main"
-else
-    echo "OS version $os_version is unsupported"
-    exit 1
-fi
+os_codename=$(lsb_release --short --codename)
+openvpn_repo="$openvpn_repo $os_codename main"
 
 echo "$openvpn_repo" > /tmp/openvpn3.list
 sudo mv /tmp/openvpn3.list /etc/apt/sources.list.d/.
