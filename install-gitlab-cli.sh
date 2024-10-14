@@ -16,6 +16,7 @@ fi
 GITLAB_URL=https://gitlab.com/gitlab-org/cli/-/releases
 GLAB_URL="$GITLAB_URL/v${VERSION}/downloads/glab_${VERSION}_linux_amd64.deb"
 
+echo "Download glab from $GLAB_URL"
 curl --fail --silent --show-error --location \
     --output-dir /tmp \
     --remote-name "$GLAB_URL"
