@@ -14,9 +14,9 @@ if [[ ${VERSION_EXISTING:-} == "$VERSION" ]]; then
 fi
 
 GITLAB_URL=https://gitlab.com/gitlab-org/cli/-/releases
-GLAB_URL="$GITLAB_URL/v${VERSION}/downloads/glab_${VERSION}_Linux_x86_64.deb"
+GLAB_URL="$GITLAB_URL/v${VERSION}/downloads/glab_${VERSION}_linux_amd64.deb"
 
 curl --fail --silent --show-error --location \
     --output-dir /tmp \
     --remote-name "$GLAB_URL"
-sudo apt-get install -f /tmp/glab_${VERSION}_Linux_x86_64.deb
+sudo apt-get install -f /tmp/glab_${VERSION}_linux_x86_64.deb
