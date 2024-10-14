@@ -16,4 +16,4 @@ sudo chmod go+r $GPG_KEY_PATH
 echo "deb [arch=$ARCH signed-by=$GPG_KEY_PATH] $REPO_URL stable main" \
     | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt-get update
-sudo apt-get install gh -y
+sudo apt-get install --yes gh
