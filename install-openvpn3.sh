@@ -2,11 +2,14 @@
 
 set -euo pipefail
 
-curl --fail --silent --show-error --location \
-    https://packages.openvpn.net/packages-repo.gpg \
-    | sudo tee /etc/apt/keyrings/openvpn.asc
+readonly BASE_URL=https://packages.openvpn.net
+readonly OPENVPN_KEY=/etc/apt/keyrings/openvpn.asc
 
-openvpn_repo="deb [arch=amd64, signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian"
+curl --fail --silent --show-error --location \
+    ${BASE_URL}/packages-repo.gpg \
+    | sudo tee ${OPENVPN_KEY}
+
+openvpn_repo="deb [arch=amd64, signed-by=${OPENVPN_KEY}] ${BASE_URL}/openvpn3/debian"
 os_codename=$(lsb_release --short --codename)
 openvpn_repo="$openvpn_repo $os_codename main"
 
