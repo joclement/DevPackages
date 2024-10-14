@@ -2,25 +2,18 @@
 
 set -euo pipefail
 
-curl --fail --silent --show-error --location \
-    https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub \
-    | gpg --dearmor > /tmp/openvpn-repo-pkg-keyring.gpg
-sudo mv /tmp/openvpn-repo-pkg-keyring.gpg /etc/apt/trusted.gpg.d/.
+sudo rm /etc/apt/trusted.gpg.d/openvpn-repo-pkg-keyring.gpg || true
 
-os_version=$(lsb_release -sr)
-openvpn_repo="deb [arch=amd64] https://swupdate.openvpn.net/community/openvpn3/repos"
-if [[ $os_version == "22.04" ]]; then
-    openvpn_repo="$openvpn_repo jammy main"
-elif [[ $os_version == "24.04" ]]; then
-    openvpn_repo="$openvpn_repo noble main"
-    # TODO https://github.com/joclement/DevPackages/issues/153
-    echo "Installing openvpn3 on Ubuntu24.04 does not work yet," \
-        "see https://github.com/OpenVPN/openvpn3-linux/issues/253"
-    exit 0
-else
-    echo "OS version $os_version is unsupported"
-    exit 1
-fi
+readonly BASE_URL=https://packages.openvpn.net
+readonly OPENVPN_KEY=/etc/apt/keyrings/openvpn.asc
+
+curl --fail --silent --show-error --location \
+    ${BASE_URL}/packages-repo.gpg \
+    | sudo tee ${OPENVPN_KEY}
+
+openvpn_repo="deb [arch=amd64, signed-by=${OPENVPN_KEY}] ${BASE_URL}/openvpn3/debian"
+os_codename=$(lsb_release --short --codename)
+openvpn_repo="$openvpn_repo $os_codename main"
 
 echo "$openvpn_repo" > /tmp/openvpn3.list
 sudo mv /tmp/openvpn3.list /etc/apt/sources.list.d/.
