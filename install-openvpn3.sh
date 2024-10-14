@@ -3,12 +3,11 @@
 set -euo pipefail
 
 curl --fail --silent --show-error --location \
-    https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub \
-    | gpg --dearmor > /tmp/openvpn-repo-pkg-keyring.gpg
-sudo mv /tmp/openvpn-repo-pkg-keyring.gpg /etc/apt/trusted.gpg.d/.
+    https://packages.openvpn.net/packages-repo.gpg \
+    | sudo tee /etc/apt/keyrings/openvpn.asc
 
 os_version=$(lsb_release -sr)
-openvpn_repo="deb [arch=amd64] https://swupdate.openvpn.net/community/openvpn3/repos"
+openvpn_repo="deb [arch=amd64, signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian"
 if [[ $os_version == "22.04" ]]; then
     openvpn_repo="$openvpn_repo jammy main"
 elif [[ $os_version == "24.04" ]]; then
