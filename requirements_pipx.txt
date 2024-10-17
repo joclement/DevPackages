@@ -12,7 +12,7 @@ nox==2024.10.9
 pdm==2.19.2
 pip-tools==7.4.1
 poetry==1.8.4
-pre-commit==3.8.0
+pre-commit==4.0.1
 python-gitlab==4.13.0
 ruff==0.6.9
 shellcheck-py==0.10.0.1
