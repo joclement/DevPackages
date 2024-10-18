@@ -1,7 +1,7 @@
 autoimport==1.6.1
 black==24.10.0
 commitizen==3.29.1
-conan==2.8.0
+conan==2.8.1
 cookiecutter==2.6.0
 cpplint==2.0.0
 cruft==2.15.0
