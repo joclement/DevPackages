@@ -33,7 +33,7 @@ repos:
     hooks:
       - id: commitizen
       - id: commitizen-branch
-        stages: [pre-push]
+        stages: [manual, pre-push]
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: a30f0d816e5062a67d87c8de753cfe499672b959  # frozen: v1.5.5
     hooks:
