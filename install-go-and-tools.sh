@@ -2,15 +2,18 @@
 
 set -euo pipefail
 
+GO_VERSION="1.23"
+readonly GO_VERSION
+
 sudo apt-get install --yes \
-    golang-1.23
+    golang-$GO_VERSION
 
 sudo update-alternatives --install \
     /usr/local/bin/go go \
-    /usr/lib/go-1.23/bin/go 100
+    /usr/lib/go-$GO_VERSION/bin/go 100
 sudo update-alternatives --install \
     /usr/local/bin/gofmt gofmt \
-    /usr/lib/go-1.23/bin/gofmt 100
+    /usr/lib/go-$GO_VERSION/bin/gofmt 100
 
 sudo snap install --classic golangci-lint
 
