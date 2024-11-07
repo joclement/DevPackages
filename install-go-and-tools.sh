@@ -8,6 +8,9 @@ readonly GO_VERSION
 sudo apt-get install --yes \
     golang-$GO_VERSION
 
+sudo update-alternatives --remove-all go || true
+sudo update-alternatives --remove-all gofmt || true
+
 sudo update-alternatives --install \
     /usr/local/bin/go go \
     /usr/lib/go-$GO_VERSION/bin/go 100
