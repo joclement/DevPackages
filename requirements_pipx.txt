@@ -1,7 +1,7 @@
 autoimport==1.6.1
 black==24.10.0
 commitizen==3.30.0
-conan==2.9.1
+conan==2.9.2
 cookiecutter==2.6.0
 cpplint==2.0.0
 cruft==2.15.0
@@ -9,11 +9,11 @@ flake8==7.1.1
 gita==0.16.7.2
 mypy==1.13.0
 nox==2024.10.9
-pdm==2.20.0.post1
+pdm==2.20.1
 pip-tools==7.4.1
 poetry==1.8.4
 pre-commit==4.0.1
-python-gitlab==4.13.0
-ruff==0.7.2
+python-gitlab==5.0.0
+ruff==0.7.3
 shellcheck-py==0.10.0.1
 tox==4.23.2
