@@ -16,7 +16,6 @@ sudo apt-get install --yes \
     fonts-hack \
     fzf \
     git \
-    git-buildpackage \
     git-crypt \
     git-extras \
     git-lfs \
