@@ -10,12 +10,12 @@ sudo apt-get install --yes \
     ccache \
     curl \
     datamash \
+    debhelper \
     devscripts \
     dos2unix \
     fonts-hack \
     fzf \
     git \
-    git-buildpackage \
     git-crypt \
     git-extras \
     git-lfs \
