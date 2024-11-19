@@ -37,7 +37,7 @@
       "matchStrings": [
         "VERSION=\"(?<currentValue>.+?)\"\\n"
       ],
-      "currentValueTemplate": "v9.1.0373",
+      "currentValueTemplate": "v9.1.0393",
       "datasourceTemplate": "git-tags",
       "depNameTemplate": "https://github.com/vim/vim.git"
     }
@@ -46,7 +46,7 @@
     {
       "matchDatasources": [
         "github-releases",
-        "github-tags"
+        "git-tags"
       ],
       "matchDepNames": [
         "hadolint/hadolint",
