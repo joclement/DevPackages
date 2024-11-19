@@ -46,7 +46,7 @@
     {
       "matchDatasources": [
         "github-releases",
-        "github-tags"
+        "git-tags"
       ],
       "matchDepNames": [
         "hadolint/hadolint",
