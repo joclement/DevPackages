@@ -35,7 +35,7 @@
         "^install-vim-from-source.sh$"
       ],
       "matchStrings": [
-        "VERSION=\"(?<currentValue>.+?)\"\\n"
+        "VERSION=\"(?<currentValue>[^\"]+)\"\\n"
       ],
       "currentValueTemplate": "v9.1.0393",
       "datasourceTemplate": "git-tags",
