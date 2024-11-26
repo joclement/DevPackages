@@ -9,7 +9,7 @@ flake8==7.1.1
 gita==0.16.7.2
 mypy==1.13.0
 nox==2024.10.9
-pdm==2.20.1
+pdm==2.21.0
 pip-tools==7.4.1
 poetry==1.8.4
 pre-commit==4.0.1
