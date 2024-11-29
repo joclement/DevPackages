@@ -13,7 +13,7 @@ pdm==2.21.0
 pip-tools==7.4.1
 poetry==1.8.4
 pre-commit==4.0.1
-python-gitlab==5.0.0
+python-gitlab==5.1.0
 ruff==0.8.0
 shellcheck-py==0.10.0.1
 tox==4.23.2
