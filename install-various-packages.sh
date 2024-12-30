@@ -5,6 +5,7 @@ set -euo pipefail
 sudo apt-get install --yes \
     apt-file \
     apt-transport-https \
+    bat \
     binutils \
     build-essential \
     ccache \
