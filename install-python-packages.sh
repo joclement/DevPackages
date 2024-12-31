@@ -3,6 +3,7 @@
 set -euo pipefail
 
 sudo apt-get install --yes \
+    libenchant-2-2 \
     pipx \
     python-is-python3 \
     python3 \
