@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+sudo apt-get purge --yes fzf || true
+
 sudo apt-get install --yes \
     apt-file \
     apt-transport-https \
@@ -15,7 +17,6 @@ sudo apt-get install --yes \
     devscripts \
     dos2unix \
     fonts-hack \
-    fzf \
     git \
     git-crypt \
     git-extras \
