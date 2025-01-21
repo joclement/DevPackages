@@ -23,6 +23,7 @@ sudo apt-get install --yes \
     git-lfs \
     git-sizer \
     htop \
+    hyperfine \
     jq \
     libperl-critic-perl \
     ncal \
