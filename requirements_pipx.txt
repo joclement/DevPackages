@@ -12,7 +12,7 @@ nox==2024.10.9
 pdm==2.22.2
 pip-tools==7.4.1
 poetry==1.8.5
-pre-commit==4.0.1
+pre-commit==4.1.0
 pylint[spelling]==3.3.3
 python-gitlab==5.3.1
 refurb==2.0.0
