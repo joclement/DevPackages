@@ -20,4 +20,4 @@ refurb==2.0.0
 ruff==0.9.3
 shellcheck-py==0.10.0.1
 tox==4.24.1
-uv==0.5.24
+uv==0.5.26
