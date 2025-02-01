@@ -3,6 +3,9 @@
 set -euo pipefail
 
 sudo apt-get purge --yes fzf || true
+sudo apt-get purge --yes git git-man
+sudo add-apt-repository --remove --yes ppa:git-core/ppa
+sudo apt-get update
 
 sudo apt-get install --yes \
     apt-file \
