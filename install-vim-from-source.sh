@@ -52,6 +52,8 @@ git checkout master
 git pull
 git checkout "$VERSION"
 
+make distclean
+
 ./configure \
     --enable-cscope \
     --enable-fail-if-missing \
