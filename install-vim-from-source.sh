@@ -33,9 +33,9 @@ sudo apt-get install --yes \
     libatk1.0-dev \
     libcairo2-dev \
     liblua5.4-dev \
-    libncurses5-dev \
+    ncurses-dev \
     libperl-dev \
-    libpython3-dev \
+    python3-dev \
     libtool-bin \
     libx11-dev \
     libxpm-dev \
