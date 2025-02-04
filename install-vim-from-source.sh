@@ -54,6 +54,7 @@ git checkout "$VERSION"
 
 ./configure \
     --enable-cscope \
+    --enable-fail-if-missing \
     --enable-fontset \
     --enable-gnome-check \
     --enable-gpm \
