@@ -48,6 +48,7 @@ if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
 cd vim
+git reset --hard
 git checkout master
 git pull
 git checkout "$VERSION"
