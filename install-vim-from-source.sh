@@ -33,14 +33,14 @@ sudo apt-get install --yes \
     libatk1.0-dev \
     libcairo2-dev \
     liblua5.4-dev \
-    ncurses-dev \
     libperl-dev \
-    python3-dev \
     libtool-bin \
     libx11-dev \
     libxpm-dev \
     libxt-dev \
     lua5.4 \
+    ncurses-dev \
+    python3-dev \
     python3-dev \
     ruby-dev
 
