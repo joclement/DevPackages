@@ -16,7 +16,6 @@ sudo apt-get update
 ./install-openvpn3.sh
 ./install-python-packages.sh
 ./install-vim-from-source.sh
-./remove-jfrog-cli.sh
 
 sudo apt-file update
 

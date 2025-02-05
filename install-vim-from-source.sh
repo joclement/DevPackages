@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="v9.1.0393"
+VERSION="v9.1.1074"
 
 if command -v vim > /dev/null; then
     VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
@@ -33,27 +33,32 @@ sudo apt-get install --yes \
     libatk1.0-dev \
     libcairo2-dev \
     liblua5.4-dev \
-    libncurses5-dev \
     libperl-dev \
-    libpython3-dev \
     libtool-bin \
     libx11-dev \
     libxpm-dev \
     libxt-dev \
     lua5.4 \
+    ncurses-dev \
     python3-dev \
-    ruby-dev
+    python3-dev \
+    ruby-dev \
+    tcl-dev
 
 if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
 cd vim
+git reset --hard
 git checkout master
 git pull
 git checkout "$VERSION"
 
+make distclean
+
 ./configure \
     --enable-cscope \
+    --enable-fail-if-missing \
     --enable-fontset \
     --enable-gnome-check \
     --enable-gpm \
