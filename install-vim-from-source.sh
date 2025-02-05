@@ -42,7 +42,8 @@ sudo apt-get install --yes \
     ncurses-dev \
     python3-dev \
     python3-dev \
-    ruby-dev
+    ruby-dev \
+    tcl-dev
 
 if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
