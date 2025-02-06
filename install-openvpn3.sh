@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-sudo rm /etc/apt/trusted.gpg.d/openvpn-repo-pkg-keyring.gpg || true
-
 readonly BASE_URL=https://packages.openvpn.net
 readonly OPENVPN_KEY=/etc/apt/keyrings/openvpn.asc
 
