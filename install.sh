@@ -13,7 +13,6 @@ sudo apt-get update
 ./install-go-and-tools.sh
 ./install-google-chrome.sh
 ./install-hadolint.sh
-./install-openvpn3.sh
 ./install-python-packages.sh
 ./install-vim-from-source.sh
 
