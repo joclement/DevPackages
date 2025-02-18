@@ -15,5 +15,7 @@ xargs -L1 pipx install --force < requirements_pipx.txt
 pipx inject \
     --force --pip-args=--constraint="$(pwd)/requirements_inject.txt" nox nox-poetry
 
+poetry config virtualenvs.in-project true
+
 sudo add-apt-repository --yes ppa:deadsnakes/ppa
 sudo apt-get update
