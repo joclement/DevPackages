@@ -7,7 +7,7 @@ cpplint==2.0.0
 cruft==2.16.0
 flake8==7.1.2
 gita==0.16.7.2
-mypy==1.14.1
+mypy==1.15.0
 nox==2024.10.9
 pdm==2.22.3
 pip-tools==7.4.1
