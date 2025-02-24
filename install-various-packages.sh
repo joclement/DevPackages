@@ -50,3 +50,5 @@ sudo apt-get install --yes \
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
+
+git lfs install
