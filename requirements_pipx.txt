@@ -16,6 +16,6 @@ pre-commit==4.1.0
 pylint[spelling]==3.3.4
 python-gitlab==5.6.0
 refurb==2.0.0
-ruff==0.9.7
+ruff==0.9.9
 shellcheck-py==0.10.0.1
 tox==4.24.1
