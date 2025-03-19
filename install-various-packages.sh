@@ -26,6 +26,7 @@ sudo apt-get install --yes \
     hyperfine \
     jq \
     libperl-critic-perl \
+    lsd \
     ncal \
     net-tools \
     oathtool \
