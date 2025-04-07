@@ -16,7 +16,7 @@ repos:
       - id: requirements-txt-fixer
       - id: trailing-whitespace
   - repo: https://github.com/codespell-project/codespell
-    rev: 193cd7d27cd571f79358af09a8fb8997e54f8fff  # frozen: v2.3.0
+    rev: 63c8f8312b7559622c0d82815639671ae42132ac  # frozen: v2.4.1
     hooks:
       - id: codespell
         exclude: |
@@ -29,7 +29,7 @@ repos:
       - id: shellcheck
         args: ["--norc"]
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: 27499d727f5ceff802bda34bbda314644824ce06  # frozen: v4.1.0
+    rev: e0b1c7743d5ea0bcba82e4ff515ce2caf5e87865  # frozen: v4.5.0
     hooks:
       - id: commitizen
       - id: commitizen-branch
@@ -39,15 +39,15 @@ repos:
     hooks:
       - id: forbid-tabs
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: 1a92c0953500d402fc49ceb67ad7fbf7cabad38a  # frozen: 3.0.3
+    rev: 3bea62898235acc3f05c1d9c33023345f6cd3c6f  # frozen: 3.2.1
     hooks:
       - id: editorconfig-checker
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: d2cee4b6903c30e2b0bdafe30e583d3a6cda80db  # frozen: v3.10.0-2
+    rev: 119ed76a0da67a4a09fff7ab55c42f5519680289  # frozen: v3.11.0-1
     hooks:
       - id: shfmt
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: cb3c2be894b151dff143b1baf6acbd55f2b7faed  # frozen: 0.30.0
+    rev: a167de9d5f4e87e1cdb16cb560aa704b79b6f655  # frozen: 0.32.1
     hooks:
       - id: check-github-workflows
       - id: check-renovate
