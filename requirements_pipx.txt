@@ -13,7 +13,7 @@ pdm==2.24.1
 pip-tools==7.4.1
 poetry==2.1.2
 pre-commit==4.2.0
-pylint[spelling]==3.3.6
+pylint[spelling]==3.3.7
 pyright==1.1.400
 python-gitlab==5.6.0
 refurb==2.0.0
