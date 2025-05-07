@@ -7,13 +7,16 @@
     "github>renovatebot/.github"
   ],
   "pip_requirements": {
-      "fileMatch": ["requirements.txt", "requirements_pipx.txt"]
+    "managerFilePatterns": [
+      "/requirements.txt/",
+      "/requirements_pipx.txt/"
+    ]
   },
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "^install-hadolint.sh$"
+      "managerFilePatterns": [
+        "/^install-hadolint.sh$/"
       ],
       "matchStrings": [
         "VERSION=\"(?<currentValue>.+?)\"\\n"
@@ -23,8 +26,8 @@
     },
     {
       "customType": "regex",
-      "fileMatch": [
-        "^install-gitlab-cli.sh$"
+      "managerFilePatterns": [
+        "/^install-gitlab-cli.sh$/"
       ],
       "matchStrings": [
         "VERSION=\"(?<currentValue>.+?)\"\\n"
@@ -34,8 +37,8 @@
     },
     {
       "customType": "regex",
-      "fileMatch": [
-        "^install-vim-from-source.sh$"
+      "managerFilePatterns": [
+        "/^install-vim-from-source.sh$/"
       ],
       "matchStrings": [
         "VERSION=\"(?<currentValue>[^\"]+)\"\\n"
