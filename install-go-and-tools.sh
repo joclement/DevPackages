@@ -5,8 +5,7 @@ set -euo pipefail
 GO_VERSION="1.22"
 readonly GO_VERSION
 
-sudo apt-get install --yes \
-    golang-$GO_VERSION
+sudo apt-get install --yes golang-$GO_VERSION
 
 sudo update-alternatives --remove-all go || true
 sudo update-alternatives --remove-all gofmt || true
