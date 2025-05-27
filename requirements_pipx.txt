@@ -17,6 +17,6 @@ pylint[spelling]==3.3.7
 pyright==1.1.401
 python-gitlab==5.6.0
 refurb==2.1.0
-ruff==0.11.10
+ruff==0.11.11
 shellcheck-py==0.10.0.1
 tox==4.26.0
