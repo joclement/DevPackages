@@ -1,6 +1,6 @@
 autoimport==1.6.1
 black==24.10.0
-commitizen==4.7.2
+commitizen==4.8.2
 cookiecutter==2.6.0
 copier==9.7.1
 cpplint==2.0.2
