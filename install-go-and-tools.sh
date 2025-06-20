@@ -21,3 +21,4 @@ sudo snap install --classic golangci-lint
 
 go install github.com/go-critic/go-critic/cmd/gocritic@latest
 go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/goreleaser/nfpm/v2/cmd/nfpm@latest
