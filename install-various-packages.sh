@@ -52,4 +52,5 @@ sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
-git lfs install
+echo "Install lfs for git"
+git -C /tmp lfs install
