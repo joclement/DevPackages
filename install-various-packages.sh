@@ -27,6 +27,7 @@ sudo apt-get install --yes \
     jq \
     libperl-critic-perl \
     lsd \
+    myrepos \
     ncal \
     net-tools \
     oathtool \
