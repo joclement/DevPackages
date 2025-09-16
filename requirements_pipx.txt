@@ -9,7 +9,7 @@ flake8==7.3.0
 mypy==1.18.1
 nox==2024.10.9
 pip-tools==7.5.0
-poetry==2.1.4
+poetry==2.2.0
 pre-commit==4.3.0
 pylint[spelling]==3.3.8
 pyright==1.1.405
