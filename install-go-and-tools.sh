@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-GO_VERSION="1.22"
+GO_VERSION="1.23"
 readonly GO_VERSION
 
 sudo apt-get install --yes golang-$GO_VERSION
