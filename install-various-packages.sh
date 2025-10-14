@@ -11,6 +11,7 @@ sudo apt-get install --yes \
     binutils \
     build-essential \
     ccache \
+    cmake \
     curl \
     datamash \
     debhelper \
