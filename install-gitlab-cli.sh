@@ -21,4 +21,4 @@ echo "Download glab from $GLAB_URL"
 curl --fail --silent --show-error --location \
     --output-dir /tmp \
     --remote-name "$GLAB_URL"
-sudo apt-get install -f /tmp/${GLAB_PKG_FILENAME}
+sudo apt-get install /tmp/${GLAB_PKG_FILENAME}
