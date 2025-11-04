@@ -19,6 +19,7 @@ sudo apt-get install --yes \
     dos2unix \
     fonts-hack \
     git \
+    git-absorb \
     git-crypt \
     git-extras \
     git-lfs \
