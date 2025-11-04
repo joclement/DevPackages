@@ -21,6 +21,7 @@ sudo apt-get install --yes \
     git \
     git-absorb \
     git-crypt \
+    git-delta \
     git-extras \
     git-lfs \
     git-sizer \
