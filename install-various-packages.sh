@@ -19,7 +19,9 @@ sudo apt-get install --yes \
     dos2unix \
     fonts-hack \
     git \
+    git-absorb \
     git-crypt \
+    git-delta \
     git-extras \
     git-lfs \
     git-sizer \
@@ -49,6 +51,8 @@ sudo apt-get install --yes \
     yamllint \
     zeal \
     zsh
+
+sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/bat
 
 sudo snap install --classic code
 sudo snap install --classic nvim
