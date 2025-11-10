@@ -50,6 +50,8 @@ sudo apt-get install --yes \
     zeal \
     zsh
 
+sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/bat
+
 sudo snap install --classic code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
