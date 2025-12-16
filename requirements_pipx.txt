@@ -6,7 +6,7 @@ copier==9.11.0
 cpplint==2.0.2
 cruft==2.16.0
 flake8==7.3.0
-mypy==1.19.0
+mypy==1.19.1
 nox==2024.10.9
 pip-tools==7.5.2
 poetry==2.2.1
