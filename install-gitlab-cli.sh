@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="1.79.0"
+VERSION="1.80.4"
 
 if command -v glab > /dev/null; then
     VERSION_EXISTING=$(glab version | grep -oE '[0-9|.]+')
