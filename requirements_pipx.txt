@@ -1,5 +1,4 @@
 autoimport==1.6.1
-black==24.10.0
 commitizen==4.10.1
 cookiecutter==2.6.0
 copier==9.11.0
