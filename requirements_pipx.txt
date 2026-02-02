@@ -1,5 +1,5 @@
 autoimport==1.6.1
-commitizen==4.12.1
+commitizen==4.13.0
 cookiecutter==2.6.0
 copier==9.11.3
 cpplint==2.0.2
