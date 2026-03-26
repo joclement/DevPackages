@@ -4,6 +4,12 @@ set -euo pipefail
 
 VERSION="1.89.0"
 
+if ${IS_FOR_PRIVATE:-}; then
+    echo "glab is not needed for private use."
+    sudo apt-get purge --yes glab
+    exit 0
+fi
+
 if command -v glab > /dev/null; then
     VERSION_EXISTING=$(glab version | grep -oE '[0-9|.]+')
 fi
