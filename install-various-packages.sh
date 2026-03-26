@@ -54,7 +54,7 @@ sudo apt-get install --yes \
 
 sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/bat
 
-sudo snap install --classic code
+sudo snap remove code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
 
