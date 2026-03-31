@@ -52,7 +52,8 @@ sudo apt-get install --yes \
     zeal \
     zsh
 
-sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/bat
+sudo rm -f /usr/local/bin/bat
+sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/cat
 
 sudo snap remove code
 sudo snap install --classic nvim
