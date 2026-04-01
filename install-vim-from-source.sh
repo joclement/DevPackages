@@ -48,7 +48,7 @@ sudo apt-get install --yes \
 if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
-cd vim
+pushd vim
 git reset --hard
 git checkout master
 git pull
@@ -82,4 +82,4 @@ fi
 
 sudo make install
 
-cd ..
+popd
