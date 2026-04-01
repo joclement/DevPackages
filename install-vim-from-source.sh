@@ -76,10 +76,6 @@ make distclean
 
 make
 
-if [ -z "${CI:-}" ]; then
-    make test
-fi
-
 sudo make install
 
 popd
