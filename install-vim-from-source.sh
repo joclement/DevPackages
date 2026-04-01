@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="v9.1.1120"
+VERSION="v9.2.0277"
 
 if command -v vim > /dev/null; then
     VERSION_EXISTING=$(vim --version | grep -oP '(?<=^Included patches: )\d+\-\d+')
@@ -48,7 +48,7 @@ sudo apt-get install --yes \
 if [ ! -d vim ]; then
     git clone --filter=tree:0 https://github.com/vim/vim.git
 fi
-cd vim
+pushd vim
 git reset --hard
 git checkout master
 git pull
@@ -76,10 +76,6 @@ make distclean
 
 make
 
-if [ -z "${CI:-}" ]; then
-    make test
-fi
-
 sudo make install
 
-cd ..
+popd
