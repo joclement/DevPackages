@@ -55,6 +55,8 @@ sudo apt-get install --yes \
 sudo rm -f /usr/local/bin/bat
 sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/cat
 
+sudo snap set system refresh.retain=2
+
 sudo snap remove code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
