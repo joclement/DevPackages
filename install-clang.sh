@@ -3,6 +3,7 @@
 set -euo pipefail
 
 sudo apt-get purge --yes \
+    clang-14 \
     clang-15 \
     clang-format-15 \
     clang-tidy-15 \
