@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+rm -f /etc/apt/sources.list.d/google-chrome.sources
+
 CHROME_URL=http://dl.google.com/linux/chrome/deb/
 
 GPG_KEY_PATH=/etc/apt/keyrings/google-chrome.gpg
