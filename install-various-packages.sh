@@ -58,6 +58,8 @@ sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/cat
 
 sudo snap set system refresh.retain=2
 
+sudo snap refresh
+
 sudo snap remove code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
