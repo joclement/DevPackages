@@ -49,6 +49,7 @@ sudo apt-get install --yes \
     xclip \
     xmlstarlet \
     yamllint \
+    yq \
     zeal \
     zsh
 
