@@ -17,6 +17,7 @@ sudo apt-get install --yes \
     debhelper \
     devscripts \
     dos2unix \
+    firejail \
     fonts-hack \
     git \
     git-absorb \
