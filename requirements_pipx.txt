@@ -1,7 +1,7 @@
 autoimport==1.6.1
 commitizen==4.13.9
 cookiecutter==2.7.1
-copier==9.14.1
+copier==9.14.3
 cpplint==2.0.2
 cruft==2.16.0
 flake8==7.3.0
