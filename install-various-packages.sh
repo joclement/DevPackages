@@ -17,6 +17,7 @@ sudo apt-get install --yes \
     debhelper \
     devscripts \
     dos2unix \
+    firejail \
     fonts-hack \
     git \
     git-absorb \
@@ -49,6 +50,7 @@ sudo apt-get install --yes \
     xclip \
     xmlstarlet \
     yamllint \
+    yq \
     zeal \
     zsh
 
@@ -56,6 +58,8 @@ sudo rm -f /usr/local/bin/bat
 sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/cat
 
 sudo snap set system refresh.retain=2
+
+sudo snap refresh
 
 sudo snap remove code
 sudo snap install --classic nvim
