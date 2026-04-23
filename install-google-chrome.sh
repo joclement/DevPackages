@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-rm -f /etc/apt/sources.list.d/google-chrome.sources
+sudo rm -f /etc/apt/sources.list.d/google-chrome.sources
 
 CHROME_URL=http://dl.google.com/linux/chrome/deb/
 
