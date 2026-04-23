@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-sudo rm -f /etc/apt/sources.list.d/google-chrome.sources
-
 CHROME_URL=http://dl.google.com/linux/chrome/deb/
 
 GPG_KEY_PATH=/etc/apt/keyrings/google-chrome.gpg
@@ -14,3 +12,5 @@ echo "deb [arch=amd64 signed-by=$GPG_KEY_PATH] $CHROME_URL stable main" \
     | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt-get update
 sudo apt-get install -y google-chrome-stable
+
+sudo rm -f /etc/apt/sources.list.d/google-chrome.sources
