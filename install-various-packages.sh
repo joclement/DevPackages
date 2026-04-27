@@ -31,6 +31,7 @@ sudo apt-get install --yes \
     jq \
     libperl-critic-perl \
     lsd \
+    miller \
     myrepos \
     ncal \
     net-tools \
