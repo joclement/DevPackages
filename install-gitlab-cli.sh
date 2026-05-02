@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="1.92.1"
+VERSION="1.93.0"
 
 if ${IS_FOR_PRIVATE:-}; then
     echo "glab is not needed for private use."
