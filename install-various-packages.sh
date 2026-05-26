@@ -55,8 +55,7 @@ sudo apt-get install --yes \
     zeal \
     zsh
 
-sudo rm -f /usr/local/bin/bat
-sudo ln --force --symbolic /usr/bin/batcat /usr/local/bin/cat
+sudo rm -f /usr/local/bin/cat
 
 sudo snap set system refresh.retain=2
 
