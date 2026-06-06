@@ -18,4 +18,4 @@ refurb==2.3.1
 ruff==0.15.15
 shellcheck-py==0.11.0.1
 sqlfluff==4.2.2
-tox==4.53.0
+tox==4.55.1
