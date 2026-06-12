@@ -8,6 +8,7 @@ sudo apt-get install --yes \
     apt-file \
     apt-transport-https \
     bat \
+    bd \
     binutils \
     build-essential \
     ccache \
