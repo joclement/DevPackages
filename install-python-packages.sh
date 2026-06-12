@@ -8,6 +8,7 @@ sudo apt-get install --yes \
     python-is-python3 \
     python3 \
     python3-doc \
+    python3-keyring \
     python3-pip \
     python3-venv
 
