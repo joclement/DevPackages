@@ -10,7 +10,7 @@ nox==2024.10.9
 pip-tools==7.5.3
 poetry==2.4.1
 pre-commit==4.6.0
-pylint[spelling]==3.3.9
+pylint[spelling]==4.0.6
 pyright==1.1.409
 pytest==9.0.3
 python-gitlab==5.6.0
