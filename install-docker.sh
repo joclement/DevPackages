@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-sudo apt-get purge --yes containerd.io || true
+sudo apt-get purge --yes containerd.io docker-compose || true
 
 sudo apt-get install --yes \
     docker-buildx \
