@@ -4,7 +4,7 @@ set -euo pipefail
 
 REPO=https://github.com/hadolint/hadolint
 
-VERSION="2.14.0"
+VERSION="2.15.1"
 
 if command -v hadolint > /dev/null; then
     VERSION_EXISTING=$(hadolint --version | grep -oE '[0-9|.]+')
