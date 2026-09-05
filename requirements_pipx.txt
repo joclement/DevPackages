@@ -7,7 +7,7 @@ cruft==2.16.0
 flake8==7.3.0
 mypy==1.20.2
 nox==2024.10.9
-pip-tools==7.5.3
+pip-tools==7.6.1
 poetry==2.4.1
 pre-commit==4.6.2
 pylint[spelling]==3.3.9
