@@ -66,6 +66,7 @@ sudo snap refresh
 sudo snap remove code
 sudo snap install --classic nvim
 sudo snap install --classic valgrind
+sudo snap install --classic yaml-language-sever
 
 echo "Install lfs for git"
 git -C /tmp lfs install
