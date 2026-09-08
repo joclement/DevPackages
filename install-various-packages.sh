@@ -41,6 +41,7 @@ sudo apt-get install --yes \
     parallel \
     pdfarranger \
     perl \
+    perlnavigator \
     shfmt \
     silversearcher-ag \
     swaks \
