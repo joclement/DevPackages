@@ -41,7 +41,6 @@ sudo apt-get install --yes \
     parallel \
     pdfarranger \
     perl \
-    perlnavigator \
     shfmt \
     silversearcher-ag \
     swaks \
@@ -50,6 +49,7 @@ sudo apt-get install --yes \
     traceroute \
     tree \
     universal-ctags \
+    unzip \
     xclip \
     xmlstarlet \
     yamllint \

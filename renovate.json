@@ -27,6 +27,17 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
+        "/^install-perlnavigator.sh$/"
+      ],
+      "matchStrings": [
+        "VERSION=\"(?<currentValue>.+?)\"\\n"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "bscan/PerlNavigator"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
         "/^install-gitlab-cli.sh$/"
       ],
       "matchStrings": [
@@ -56,6 +67,7 @@
       ],
       "matchDepNames": [
         "hadolint/hadolint",
+        "bscan/PerlNavigator",
         "vim/vim"
       ],
       "matchUpdateTypes": [
